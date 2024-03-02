@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: $btnBg;
+  border-radius: $borderRadius;
+  padding: 23px 46px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    background: darken($btnBg, 20%);
+    transform: scale(1.03);
+  }
+}

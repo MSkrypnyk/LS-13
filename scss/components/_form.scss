@@ -1,0 +1,72 @@
+.form {
+  background: var(--formBg);
+  padding: 88px 70px 80px 70px;
+  border-radius: $borderRadius;
+  max-width: $formContainerWidth;
+  margin-inline: auto;
+  text-align: center;
+  @include mobile {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 33px;
+    color: $textColor;
+    margin-bottom: 12px;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      color: lighten($textColor, 20%);
+    }
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: $textFz;
+    color: var(--textColor);
+    opacity: 0.6;
+    margin-bottom: 60px;
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__row {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__forgot {
+    font-weight: 600;
+    font-size: $textFz;
+    color: var(--textColor);
+    opacity: 0.5;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
+
+  &__sign {
+    font-weight: 400;
+    font-size: $textFz;
+    color: var(--textColor);
+  }
+}

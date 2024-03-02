@@ -1,0 +1,35 @@
+.checkbox {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+    &:checked ~ .checkbox__box {
+      background: var(--textColor);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__box {
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(3, 1, 76, 0.6);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+  }
+
+  &__label {
+    font-family: var(--ff);
+    font-weight: 600;
+    font-size: $textFz;
+    color: var(--textColor);
+    opacity: 0.6;
+  }
+}
